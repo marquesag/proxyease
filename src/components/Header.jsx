@@ -41,9 +41,11 @@ export default function Header() {
                     <strong className='text-gray-400 font-semibold'>ISP</strong>
                     <span>{userInfo?.org || 'N/A'}</span>
                 </div>
-               <div className='flex text-green-400 items-center space-x-4'>
-                    <span>Check my IP</span>
-                    <LiaExternalLinkAltSolid size={"1.2rem"} />
+                <div className='flex text-green-400 items-center'>
+                    <a className="flex-row flex items-center space-x-4" href={`http://ip-api.com/json/${userInfo?.ip}`}>
+                        <span>Check my IP (JSON)</span>
+                        <LiaExternalLinkAltSolid size={"1.2rem"} />
+                    </a>
                 </div>
             </div>
             <div className="h-[5.5rem] text-center w-[1.2px] bg-gray-400/30"></div>

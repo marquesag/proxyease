@@ -3,6 +3,9 @@ import Logo from './components/Logo';
 import Header from './components/Header';
 import SetLocation from "./components/SetLocation";
 
+//github.com/proxyease
+//front-end designed with <3 by Lucas Marques
+
 function App() {
   
   return (
@@ -11,7 +14,7 @@ function App() {
       <section className='bg-gray-900 contrast-[1.1] grid grid-cols-[1.35fr_1fr]'>
         <SetLocation/>
         <div className='grid grid-rows-[3fr_0.8fr] justify-center items-center '>
-          <div className="power relative w-32 h-32 rounded-full border-[6px] drop-shadow-2xl shadow-2xl shadow-green-400/70 border-green-400 before:content-[''] before:absolute before:w-5/6 before:h-5/6 before:rounded-full before:border-2 before:bg-white flex justify-center items-center hover:scale-110">
+          <div className="power relative w-32 h-32 rounded-full border-[6px] drop-shadow-2xl shadow-2xl shadow-green-400/70 border-green-400 before:content-[''] before:absolute before:w-5/6 before:h-5/6 before:rounded-full before:border-2 before:bg-white flex justify-center items-center hover:scale-110 hover:shadow-white transition duration-300 ease-in-out hover:border-white">
             <div className="relative">
               <IoMdPower style={
                 {
