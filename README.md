@@ -6,7 +6,7 @@
 <br />
 <h1>
 <p align="center">
-  <img src="https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/prxease-logo.png">
+  <img src="https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/prxease-logo.png" width="280px">
   
 </h1>
   <p align="center">
