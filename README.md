@@ -7,10 +7,9 @@
 <h1>
 <p align="center">
   <img src="https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/prxease-logo.png" width="280px">
-  
 </h1>
   <p align="center">
-    A Chrome extension developed based on Manifest V3 to connect to proxies in various countries and obtain user information.
+    A Chrome extension based on Manifest V3 to connect to proxies in various countries and fetch user info.
     <br />
     </p>
 </p>
@@ -18,11 +17,11 @@
 ![gif](https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/prxease-demo.gif)
 <p align="center">
   <a href="#about-the-project">About The Project</a> •
-  <a href="#usage">How To Use</a> •
-  <a href="#examples">Examples</a> •
-  <a href="#best-practice">Best Practice</a> •
-  <a href="#credits">Credits</a> •
-  <a href="examples.md">More Examples</a>
+  <a href="#pre-requisites">Pre Requisites</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#usage">Usage</a> •
+  <a href="#🌏-browser-support">Browser Support</a> •
+    <a href="#contributing">Contributing</a> •
 </p>  
 
 <p align="center">
@@ -30,7 +29,7 @@
 </p>                                                                                                                             
                                                                                                                                                       
 ## About The Project
-📜 This Chrome extension is a UI prototype, meticulously developed using React JS and Tailwind JS. 
+📜 This Chrome extension is a UI prototype, meticulously developed using [React JS](https://react.dev/) and [Tailwind JS.](https://tailwindcss.com/) 
 1. It operates seamlessly under [Chrome's V3 manifest](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3), demonstrating exceptional integration and performance. 
 
 ![screenshot](https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/cover.jpg)
@@ -42,6 +41,7 @@
 
 ## Pre-requisites
 - Install [Node.js](https://nodejs.org/en/) **v20.15.0** with long-term support.
+
 ## Getting started
 - Clone the repository
 ```
@@ -66,30 +66,30 @@ In any `chrome-based` browser go to: [chrome://extensions](chrome://extensions)
 
 4. Go to the project folder and upload `dist 📁`
 
-After the steps above, you should see something like `this` above.
+After the steps above, you should see something like `this` below.
 
 ![screenshot](https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/pxease_extensions.png)
 
- - [ ] I can see the loaded extension and its icon in the browser header.
-
+ - [ ] I was able to *install* the extension
+ 
 👍 After this, **enjoy!**
 
-## Examples
-```py
-from google.colab import drive
-drive.mount('/gdrive', force_remount=False)
-import os
-!wget -q https://raw.githubusercontent.com/L0garithmic/fastcolabcopy/main/fastcopy.py
-import fastcopy
-!python fastcopy.py /gdrive/Shareddrives/Source/. /gdrive/Shareddrives/Destination --thread 20 --size-limit 400mb
-```
-If you want to see copy execution time:
-```mod
-!pip install -q ipython-autotime
-%load_ext autotime
-```
-Check out <a href="examples.md">examples.md</a> for some more examples.
+## 🌏 Browser Support
 
-## Credits
-- Credit to [ikonikon](https://github.com/ikonikon/fast-copy) for the base multi-threading code.   
-- Thanks to [@Ostokhoon](https://www.freelancer.com/u/Ostokhoon) for ALL argument and folder hierarchy functionality.
+| <img src="https://user-images.githubusercontent.com/1215767/34348387-a2e64588-ea4d-11e7-8267-a43365103afe.png" alt="Chrome" width="16px" height="16px" /> Chrome | <img src="https://user-images.githubusercontent.com/1215767/34348590-250b3ca2-ea4f-11e7-9efb-da953359321f.png" alt="IE" width="16px" height="16px" /> Internet Explorer | <img src="https://user-images.githubusercontent.com/1215767/34348380-93e77ae8-ea4d-11e7-8696-9a989ddbbbf5.png" alt="Edge" width="16px" height="16px" /> Microsoft Edge | <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Brave_icon_lionface.png" alt="Brave" width="16px" height="16px" /> Brave| <img src="https://user-images.githubusercontent.com/1215767/34348383-9e7ed492-ea4d-11e7-910c-03b39d52f496.png" alt="Firefox" width="16px" height="16px" /> Firefox |
+| :---------: | :---------: | :---------: | :---------: | :---------: |
+| Yes | ❌ | Yes | Yes| Soon|
+
+Contributing
+------------
+
+1. Fork the project (<https://github.com/marquesag/proxyease>)
+2. Create a _branch_ for your modification (`git checkout -b my-new-feature`)
+3. _commit_ (`git commit -am 'Adding a new feature...'`)
+4. _Push_ (`git push origin my-new-resource`)
+5. Create a new _Pull Request_
+
+
+## License
+
+Distributed under the MIT License. See [LICENSE.txt](LICENSE) for more information.
