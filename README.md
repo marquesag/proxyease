@@ -14,6 +14,8 @@
     <br />
     </p>
 </p>
+
+![gif](https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/prxease-demo.gif)
 <p align="center">
   <a href="#about-the-project">About The Project</a> •
   <a href="#usage">How To Use</a> •
@@ -24,43 +26,53 @@
 </p>  
 
 <p align="center">
-  
-![screenshot](img/clip.gif)
+ 
 </p>                                                                                                                             
                                                                                                                                                       
 ## About The Project
-FastColabCopy is a Python script for parallel (multi-threading) copying of files between two locations. Currently developed for Google-Drive to Google-Drive transfers using Google-Colab. This script frequently achieves 10-50x speed improvements when copying numerous small files.
+📜 This Chrome extension is a UI prototype, meticulously developed using React JS and Tailwind JS. 
+1. It operates seamlessly under [Chrome's V3 manifest](https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3), demonstrating exceptional integration and performance. 
 
-## Importing
+![screenshot](https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/cover.jpg)
 
-Import from GitHub:
-```py
-!wget https://raw.githubusercontent.com/L0garithmic/fastcolabcopy/main/fastcopy.py
-import fastcopy
+1. As soon, i might integrate public proxies.
+2. To provide a seamless user experience, this extension exemplifies the power of modern web development frameworks.
+
+✍ ✨The prototype developed by me in Figma is [available here](https://www.figma.com/community/file/1383629443351683238/proxyease-browser-extension)
+
+## Pre-requisites
+- Install [Node.js](https://nodejs.org/en/) **v20.15.0** with long-term support.
+## Getting started
+- Clone the repository
 ```
-
-Import from Google Drive:
-```py
-!cp /gdrive/MyDrive/fastcopy.py .
-import fastcopy
+git clone https://github.com/marquesag/proxyease.git
 ```
-
+- Install dependencies
+```
+npm i
+```
+- Build and run the project
+```
+npm run build
+```
+💡 The files will be built in`/dist`
 
 ## Usage
-```sh
-usage: fast-copy.py [-h HELP] source destination [-d DELETE] [-s SYNC] [-r REPLACE]
+In any `chrome-based` browser go to: [chrome://extensions](chrome://extensions)
+1. Turn on  `Developer mode`
+1. Click on  `Load unpacked` to upload
 
-optional arguments:
-  -h --help            show this help message and exit
-  source                the drive you are copying from
-  destination           the drive you are copying to
-  -d --delete           delete the source files after copy
-  -s --sync             delete files in destination if not found in source (do not use, if using with rsync)
-  -r --replace          replace files if they exist
-  -t --thread           set the amount of parallel threads used
-  -l --size-limit       set max size of files copied (supports gb, mb, kb) eg 1.5gb
-```
-The `source` and `destination` fields are required. Everything else is optional.
+>  Remember that the files were saved in `/dist`📁
+
+4. Go to the project folder and upload `dist 📁`
+
+After the steps above, you should see something like `this` above.
+
+![screenshot](https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/pxease_extensions.png)
+
+ - [ ] I can see the loaded extension and its icon in the browser header.
+
+👍 After this, **enjoy!**
 
 ## Examples
 ```py
@@ -77,13 +89,6 @@ If you want to see copy execution time:
 %load_ext autotime
 ```
 Check out <a href="examples.md">examples.md</a> for some more examples.
-
-## Best Practice
-Colab has wildly varying transfer speeds, because of this, the best we can offer are suggestions:
-- For large groups of medium/small files, 15-40 threads seems to work best.
-- For 50+ files with significantly varying sizes, try 2 sequentially copies. `-t 15 -l 400` then `-t 2`
-- For files that are 100MB+, it is best to use 2 threads. It is still faster then rsync.   
-- Currently `--sync` breaks if rsync is ran after. If you are mirroring drives. Disable `--sync` and use the rsync's `--delete` function.
 
 ## Credits
 - Credit to [ikonikon](https://github.com/ikonikon/fast-copy) for the base multi-threading code.   
