@@ -8,9 +8,8 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/marquesag/proxyease/main/public/images/prxease-logo.png" width="280px">
 </h1>
-  <p align="center">
-    A Chrome extension based on Manifest V3 to connect to proxies in various countries and fetch user info.
-    <br />
+    <p align="center">
+      A Chrome extension based on <a href="https://developer.chrome.com/docs/extensions/develop/migrate/what-is-mv3">Manifest V3</a> with a minimalist and captivating design.<br>✈ Simplify your browsing experience with Proxy Ease!
     </p>
 </p>
 
@@ -21,7 +20,7 @@
   <a href="#getting-started">Getting Started</a> •
   <a href="#usage">Usage</a> •
   <a href="#🌏-browser-support">Browser Support</a> •
-    <a href="#contributing">Contributing</a> •
+    <a href="#contributing">Contributing</a>
 </p>  
 
 <p align="center">
